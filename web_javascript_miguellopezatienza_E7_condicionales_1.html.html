@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ejercicio 7</title>
+</head>
+
+<body>
+
+<h1>ejercicio 7</h1>
+
+<p>este programa pregunta si quieres jugar luego te pide una fruta y te dice el precio despues te hace otra pregunta y responde segun lo que pongas</p>
+
+<script>
+
+let jugar = prompt("quieres jugar s o n")
+
+
+if (jugar == "s" || jugar == "S") {
+
+    let fruta = prompt("dime una fruta")
+
+    fruta = fruta.toLowerCase()
+
+    switch (fruta) {
+
+        case "naranjas":
+            alert("las naranjas cuestan 0.59")
+            break
+
+        case "manzanas":
+            alert("las manzanas cuestan 0.32")
+            break
+
+        case "platanos":
+            alert("los platanos cuestan 0.48")
+            break
+
+        case "cerezas":
+            alert("las cerezas cuestan 3.00")
+            break
+
+        case "mangos":
+        case "papayas":
+            alert("mangos y papayas cuestan 2.79")
+            break
+
+        case "peras":
+            alert("las peras cuestan 0.75")
+            break
+
+        case "kiwi":
+            alert("el kiwi cuesta 1.50")
+            break
+
+        default:
+            alert("no tenemos " + fruta)
+
+    }
+
+
+    let respuesta = prompt("quieres preguntar algo mas si o no")
+
+    if (respuesta == "si" || respuesta == "Si") {
+        alert("no hay tiempo ahora")
+    } 
+    else if (respuesta == "no" || respuesta == "No") {
+        alert("gracias por tu consulta")
+    } 
+    else {
+        alert("respuesta mal escrita")
+    }
+
+} 
+else if (jugar == "n" || jugar == "N") {
+    alert("vale sera otro dia")
+} 
+else {
+    alert("tienes que poner s o n")
+}
+
+</script>
+
+</body>
+</html>
